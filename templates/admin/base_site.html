@@ -1,0 +1,22 @@
+<!--Extending admin page-->
+{% extends 'admin/base.html' %}
+
+<!--Static files-->
+{% load static %}
+
+<!--Customising branding at navbar-->
+{% block branding %}
+<h1 id="head">
+  <img
+    src="{% static 'img/logo.png' %}"
+    alt="BT Real Estate"
+    height="50"
+    width="80"
+    class="brand_img"
+  />Admin area
+</h1>
+
+<!-- CSS -->
+{% endblock %} {% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}" />
+{% endblock %}
